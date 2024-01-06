@@ -1,0 +1,37 @@
+                                                                                                    Sniff.py Documentation:-
+Introduction:-
+Sniff.py is a non-intrusive network sniffer tool that captures and analyzes network packets. It allows users to monitor various network protocols and provides valuable insights into the network traffic. This is a tool that i have created for this internship project.
+
+Features:-
+Packet Capturing: Captures network packets for analysis.
+Protocol Support: Recognizes and processes the following protocols:
+ICMP (Internet Control Message Protocol)
+DNS (Domain Name System)
+ARP (Address Resolution Protocol)
+TCP (Transmission Control Protocol)
+UDP (User Datagram Protocol)
+Real-time Display: Displays packet information and statistics in real-time during the packet capture process.
+Logging: Logs captured packet information to a file (log.txt) for later analysis.
+Customizable Capture Duration: Allows users to specify the duration (in seconds) for capturing packets.
+User-friendly Interface: Provides an easy-to-use command-line interface for interacting with the tool.
+
+Usage:-
+Download the Sniff.py file.
+Install the dependencies using pip: pip install scapy or pip3 install scapy.
+To capture packets, run the following command: python sniff.py / python3 sniff.py
+This code is only linux compatible. It does not work with windows due permission conflicts and due to un-avaliability of libraries.
+
+
+Log File Details:-
+This tool logs the captured packet information to a file named log.txt. The log file contains the following details for each packet:
+
+Packet count: Total number of packets captured
+Timestamp: Date and Time
+Protocol-specific information:
+ICMP: ICMP type, ICMP code, packet length, source IP, destination IP.
+DNS: DNS query, packet length, source IP, destination IP.
+ARP: ARP source IP, ARP destination IP, ARP operations, packet length.
+TCP: Source port, destination port, packet length, source IP, destination IP, protocol (TCP).
+UDP: Source port, destination port, packet length, source IP, destination IP, protocol (UDP).
+
+I wll be attaching screenshots of the tool and the python file.
